@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://0.0.0.0/practice');
+mongoose.connect('mongodb://0.0.0.0/node');
 
 const Schema = mongoose.Schema(
     {
@@ -13,7 +13,7 @@ const Schema = mongoose.Schema(
         },
         city: {
             type: String,
-            required: falses
+            required: false
         }
     }, { strict: false }
 );
